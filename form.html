@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="mb-3">
+            <h2>Forms</h2>
+
+            <form>
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="email input box">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordInput"
+                        aria-describedby="password input box">
+                    <div id="passwordHelp" class="form-text">Your password must be 8-20 characters long</div>
+                </div>
+
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" id="agreeCheckbox">
+                    <label for="agreeCheckbox" class="form-check-label">Agree</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="mb-5">
+            <form>
+                <h2>Forms floating label</h2>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="email input box">
+                    <label for="emailInput">Email Address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="passwordInput"
+                        aria-describedby="password input box">
+                    <label for="passwordInput">Password</label>
+                </div>
+
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" id="agreeCheckbox">
+                    <label for="agreeCheckbox" class="form-check-label">Agree</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="mb-5">
+            <h2>Form Validations</h2>
+            <form class="row g-3 needs-validation was-validated" novalidate="">
+                <div class="col-md-4">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" value="Davy" required>
+                    <div class="valid-feedback">
+                        Looks Good
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                    <div class="valid-feedback">
+                        Looks Good
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="userName" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="userName" required>
+                    <div class="valid-feedback">
+                        Looks Good
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label">State</label>
+                    <select class="form-select" name="state" id="state" required>
+                        <option disabled value="">Choose..</option>
+                        <option>California</option>
+                        <option>Nevada</option>
+                    </select>
+                </div>
+
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
